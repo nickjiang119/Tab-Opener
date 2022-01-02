@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<script src="openWindow.js"></script>
+	<script src="cookies.js"></script>
+	</head>
+
+    <body>
+
+		<form id="addressForm">
+		
+		Enter the addresses:<br>
+		1. <input type="text" id="address1" name="address1">
+		<br><br>
+		2. <input type="text" id="address2" name="address2">
+		<br><br>
+		3. <input type="text" id="address3" name="address3">
+		<br><br>
+		4. <input type="text" id="address4" name="address4">
+		<br><br>
+		5. <input type="text" id="address5" name="address5">
+		<br><br>
+		
+		<input type="button" value="Submit" onclick="storeValues();openWindow()">
+
+		</form>
+
+		<script type="text/javascript">
+
+            if(address1.value = getCookie("address1")) document.getElementById("address1").value = address1.value;
+            if(address2.value = getCookie("address2")) document.getElementById("address2").value = address2.value;
+            if(address3.value = getCookie("address3")) document.getElementById("address3").value = address3.value;
+            if(address4.value = getCookie("address4")) document.getElementById("address4").value = address4.value;
+            if(address5.value = getCookie("address5")) document.getElementById("address4").value = address5.value;
+
+		</script>
+		
+    </body>
+
+</html>
+
